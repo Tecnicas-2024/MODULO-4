@@ -1,0 +1,195 @@
+---
+title: Infraestructuras críticas-Sistemas de Transporte
+authors:
+  - name: Futuros ingenieros 
+    thanks: Técnicas y Herramientas Modernas I-Infraestructuras
+    affiliation: Universidad Nacional de Cuyo
+    location: Ingenieros J. 1400
+    email: ingenieria.uncuyo.edu.ar
+
+abstract: |
+  Este paper busca demostrar como la infraestructura crítica juega un papel fundamental en el funcionamiento y bienestar de las sociedades.
+bibliography: inf.bib
+biblio-style: unsrt
+output: rticles::arxiv_article
+---
+
+\pagebreak
+
+# Introducción
+
+En el mundo globalizado actual, la infraestructura crítica juega un papel fundamental en el funcionamiento y bienestar de las sociedades. El sistema de transporte, como componente vital de esta infraestructura, es esencial para la economía global, facilitando el movimiento de bienes, servicios y personas. El Canal de Panamá, una de las infraestructuras de transporte más importantes del mundo, enfrenta diversos desafíos que amenazan su eficiencia y seguridad. Este trabajo se centra en analizar la infraestructura crítica del sistema de transporte, con un enfoque en el Canal de Panamá, y propone el uso de gemelos digitales como una solución innovadora para mejorar su operación y resiliencia.
+
+## ¿Qué es una infraestructura crítica?
+
+Son todos aquellos sistemas físicos o virtuales que hacen posible las funciones y servicios considerados esenciales y que contribuyen al buen desempeño de los sistemas más básicos a nivel social, económico, medioambiental y político. Cualquier alteración o interrupción en su suministro, debido a causas naturales (una catástrofe climática, por ejemplo) o provocada por el factor humano (como un ataque cibernético a una central de energía eléctrica) podría acarrear graves consecuencias.
+
+![](1I.png)
+
+## Tipos de infraestructura crítica
+
+Nos brinda una visión general de las principales infraestructuras críticas [@noauthor_infraestructuras_nodate]
+
+Estas se agrupan comúnmente en sectores o áreas estratégicas, cada una con sus propias características y desafíos específicos. A continuación se presentan los principales tipos de infraestructuras críticas:
+
+#### 1. **Sector de Químicos**
+
+Incluye la producción, almacenamiento y transporte de productos químicos, los cuales son esenciales para diversas industrias pero también representan un riesgo significativo si no se manejan adecuadamente
+
+#### 2. **Sector de Comunicaciones**
+
+Comprende las telecomunicaciones, redes de datos y otros servicios de comunicación que son fundamentales para la conectividad y el intercambio de información en tiempo real.
+
+#### 3. **Sector de Energía**
+
+Abarca la generación, transmisión y distribución de electricidad, así como las industrias de petróleo y gas, que son esenciales para casi todas las actividades económicas y sociales.
+
+#### 4. **Sector de Servicios de Emergencia**
+
+Incluye las agencias de policía, bomberos, servicios médicos de emergencia y otras entidades de respuesta a emergencias que son cruciales para la seguridad y el bienestar de la población.
+
+#### 5. **Sector de Presas**
+
+Se refiere a las estructuras y sistemas asociados con presas y embalses, que son vitales para el suministro de agua, control de inundaciones y generación de energía hidroeléctrica.
+
+#### 6. **Sector de Defensa Industrial**
+
+Involucra la producción y mantenimiento de armas, equipos y tecnologías militares necesarias para la defensa nacional.
+
+#### 7. **Sector de Alimentación y Agricultura**
+
+Cubre la producción, procesamiento y distribución de alimentos y productos agrícolas, asegurando el suministro continuo de alimentos a la población.
+
+#### 8. **Sector de Gobierno y Servicios Públicos**
+
+Incluye las instalaciones y servicios esenciales del gobierno, que son cruciales para el funcionamiento administrativo y operativo del país.
+
+#### 9. **Sector Financiero**
+
+Abarca los bancos, mercados financieros y otras instituciones financieras, que son fundamentales para la estabilidad económica y el crecimiento.
+
+#### 10. **Sector de Salud y Salud Pública**
+
+Comprende hospitales, clínicas, laboratorios y otros servicios y recursos de salud pública, esenciales para la atención médica y el bienestar de la población.
+
+#### 11. **Sector de Tecnologías de la Información**
+
+Incluye los sistemas y servicios de tecnologías de la información como hardware, software y redes, que son vitales para la comunicación y la gestión de datos.
+
+#### 12. **Sector Nuclear**
+
+Se refiere a las instalaciones y actividades relacionadas con la energía nuclear y materiales radiactivos, que requieren un manejo y protección rigurosos.
+
+#### 13. **Sector de Transporte**
+
+Incluye sistemas de transporte aéreo, terrestre, marítimo y ferroviario, que son esenciales para el movimiento de personas y bienes.
+
+#### 14. **Sector de Agua y Aguas Residuales**
+
+Abarca la gestión del suministro de agua potable y el tratamiento de aguas residuales, cruciales para la salud pública y el medio ambiente.
+
+#### 15. **Sector de Instalaciones Críticas**
+
+Comprende las instalaciones comerciales, residenciales, de entretenimiento y de servicios que tienen un impacto significativo en la seguridad y economía.
+
+#### 16. **Sector de Materiales Críticos y Manufactura**
+
+Involucra la producción de materiales esenciales y bienes manufacturados cruciales para la seguridad y economía del país.
+
+## Sector de sistemas de transporte como infraestructura crítica
+
+El sistema de transporte incluye la aviación, la red de autopistas y autovías, el transporte marítimo, el transporte público y ferroviario de pasajeros, los sistemas de oleoductos, el transporte ferroviario de mercancías, y los servicios de correos y envíos Este se considera una infraestructura crítica porque es esencial para el funcionamiento y la seguridad de una sociedad. A continuación, [@noauthor_critical_nodate] detalla los componentes principales y las razones clave:
+
+-   **Movilidad y conectividad:**
+
+Un sistema de transporte seguro y eficiente es crucial para la seguridad nacional. Permite la rápida movilización de recursos en caso de emergencias y desastres
+
+-   **Impacto económico:**
+
+El transporte es vital para el comercio y la industria. La interrupción de los sistemas de transporte puede causar pérdidas económicas significativas y afectar la cadena de suministro.
+
+-   **Servicios esenciales:**
+
+Muchas otras infraestructuras críticas, como la salud, la energía y las telecomunicaciones, dependen del transporte para su funcionamiento. Por ejemplo, los hospitales necesitan suministros médicos que se transportan por carretera, aire o ferrocarril.
+
+-   **Respuesta a emergencias:**
+
+En situaciones de emergencia, como desastres naturales o ataques terroristas, el transporte es crucial para la evacuación y el suministro de ayuda humanitaria.
+
+# Desarrollo
+
+# Caso de estudio: el canal de Panamá
+
+## Funcionamiento
+
+El Canal de Panamá es una obra de ingeniería que permite a los barcos transitar entre el Océano Atlántico y el Océano Pacífico.
+
+Su funcionamiento se basa en un sistema de esclusas y compuertas que controlan el flujo de agua para elevar y descender los barcos a través de diferentes niveles del canal.
+
+Detalla [@noauthor_descubre_2023]
+
+![](2I.png)
+
+### Esclusas
+
+Las esclusas son estructuras hidráulicas fundamentales en el Canal de Panamá. Consisten en cámaras que se llenan o vacían de agua para mover los barcos de un nivel a otro. El canal tiene tres juegos de esclusas: Miraflores, Pedro Miguel y Gatún, cada uno con dos cámaras. Los barcos entran en una cámara, las compuertas se cierran, y se bombea agua para ajustar el nivel, permitiendo así el tránsito seguro entre los océanos.
+
+![](3I.png)
+
+### Compuertas
+
+Las compuertas son puertas operadas por motores eléctricos que controlan el flujo de agua en las esclusas. Cada compuerta pesa alrededor de 700 toneladas y mide 19 metros de ancho, diseñada para soportar la presión del agua. Al cerrar las compuertas, se regula el nivel del agua en las cámaras, facilitando el movimiento de los barcos.
+
+### Control del Tráfico
+
+El control del tráfico es crucial para la eficiencia y seguridad del canal. Los barcos deben reservar su paso con antelación y proporcionar detalles sobre su carga y destino. Pilotos capacitados guían a los barcos utilizando boyas y señales de luz. Este sistema garantiza una navegación ordenada y segura a través del canal.
+
+## Importancia del Canal
+
+### Comercio Internacional
+
+El canal es una de las rutas más importantes del comercio mundial, manejando el 5% del comercio global.
+
+### Economía de Panamá
+
+Representa una fuente significativa de ingresos para Panamá, contribuyendo aproximadamente al 10% del PIB del país.
+
+### Reducción de Costos
+
+Permite a los barcos evitar la larga travesía alrededor de América del Sur, reduciendo considerablemente los costos de transporte.
+
+## Impacto Ambiental del Canal de Panamá
+
+### Pérdida de Hábitat
+
+La construcción del canal provocó la deforestación y la pérdida de hábitats naturales.
+
+### Especies Invasoras
+
+El canal ha facilitado la introducción de especies invasoras, afectando negativamente el ecosistema local.
+
+### Calidad del Agua
+
+El canal impacta la calidad del agua debido a los sedimentos y otros materiales presentes.
+
+## ¿Qué pasa si se ve afectado el funcionamiento del canal de Panamá?
+
+En base a lo suscitado por [@noauthor_por_nodate] ,[@eavis_sequiafecta_2023] y por [@noauthor_cambio_2023] desarrollamos las posibles consecuencias de un mal funcionamiento del canal de Panamá.
+
+Por más de un siglo, el Canal de Panamá ha sido la ruta más corta entre los dos mayores océanos del mundo.
+
+Por él pasa casi el 6% del comercio mundial: cada año, más de 12.000 barcos lo cruzan de un lado a otro para llevar sus mercancías o pasajeros por más de 140 rutas a más de 160 países.
+
+Sin embargo, el funcionamiento del Canal de Panamá enfrenta serias amenazas debido al cambio climático y otros factores. La sequía, por ejemplo, ha reducido significativamente el nivel de agua en el Lago Gatún, un componente crítico del canal.
+
+Si la situación del Canal de Panamá empeora,habrían mayores restricciones acerca del paso y el peso de los buques y las consecuencias serían severas tanto a nivel local como global. Se prevé que las restricciones en el tránsito de barcos se incrementen, lo que llevaría a una reducción significativa en el volumen de mercancías que pueden pasar por el canal. Esto no solo afectaría a las grandes navieras, sino también a pequeñas y medianas empresas que dependen del comercio internacional para sus operaciones diarias. Las rutas alternativas, como el paso por el Cabo de Hornos o el Canal de Suez, se volverían necesarias, incrementando los costos de transporte y los tiempos de entrega. Las rutas más largas significarían un mayor consumo de combustible, lo que a su vez elevaría los precios de los bienes y servicios en los mercados globales, afectando a los consumidores finales.
+
+Además, las cadenas de suministro globales se verían gravemente afectadas, especialmente para las industrias que dependen de entregas just-in-time, como la automotriz, la tecnología y la manufactura. Los retrasos en la entrega de componentes críticos podrían llevar a paradas en la producción, pérdidas económicas y desempleo. La incertidumbre y la falta de previsibilidad en los tiempos de tránsito también podrían obligar a las empresas a mantener mayores inventarios, incrementando sus costos operativos.
+
+Panamá, por su parte, enfrentaría una disminución drástica en los ingresos derivados del canal, lo que afectaría su economía y podría llevar a recortes en servicios públicos y proyectos de infraestructura esenciales. La pérdida de ingresos podría provocar una desaceleración económica en el país, afectando sectores clave como la construcción, el turismo y los servicios financieros. Además, la dependencia de rutas alternativas incrementaría la huella de carbono del transporte marítimo, agravando el cambio climático y creando un ciclo perjudicial para la sostenibilidad global. La situación también podría generar tensiones geopolíticas, ya que los países y las empresas buscan asegurar rutas comerciales seguras y eficientes.
+
+La situación requiere una acción inmediata y soluciones innovadoras para mitigar estos riesgos y asegurar la continuidad del comercio internacional. La implementación de tecnologías avanzadas, como gemelos digitales y sistemas de gestión del agua más eficientes, podría mejorar la resiliencia del canal. Asimismo, la cooperación internacional y la inversión en infraestructuras críticas alternativas podrían ayudar a diversificar las rutas de transporte y reducir la dependencia excesiva de un solo canal. Solo a través de un enfoque integral y coordinado se podrán enfrentar los desafíos y garantizar la estabilidad del comercio global en el futuro.
+
+# Conclusión
+
+En resumen, cualquier interrupción o disminución en la capacidad operativa del Canal de Panamá tiene efectos en cadena que afectan tanto al comercio internacional como a la economía de Panamá. La implementación de soluciones innovadoras, como los gemelos digitales, es crucial para mejorar la resiliencia y eficiencia de esta infraestructura crítica frente a los desafíos actuales y futuros.

@@ -1,0 +1,506 @@
+\documentclass{article}
+
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{lmodern}        % https://github.com/rstudio/rticles/issues/343
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{graphicx}
+
+\title{Infraestructuras críticas-Sistemas de Transporte}
+
+\author{
+    Futuros ingenieros
+    \thanks{Técnicas y Herramientas Modernas I-Infraestructuras}
+   \\
+    Universidad Nacional de Cuyo \\
+  Ingenieros J. 1400 \\
+  \texttt{ingenieria.uncuyo.edu.ar} \\
+  }
+
+
+% tightlist command for lists without linebreak
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+% Pandoc citation processing
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+% for Pandoc 2.8 to 2.10.1
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
+% For Pandoc 2.11+
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+Este paper busca demostrar como la infraestructura crítica juega un
+papel fundamental en el funcionamiento y bienestar de las sociedades.
+\end{abstract}
+
+
+\pagebreak
+
+\hypertarget{introducciuxf3n}{%
+\section{Introducción}\label{introducciuxf3n}}
+
+En el mundo globalizado actual, la infraestructura crítica juega un
+papel fundamental en el funcionamiento y bienestar de las sociedades. El
+sistema de transporte, como componente vital de esta infraestructura, es
+esencial para la economía global, facilitando el movimiento de bienes,
+servicios y personas. El Canal de Panamá, una de las infraestructuras de
+transporte más importantes del mundo, enfrenta diversos desafíos que
+amenazan su eficiencia y seguridad. Este trabajo se centra en analizar
+la infraestructura crítica del sistema de transporte, con un enfoque en
+el Canal de Panamá, y propone el uso de gemelos digitales como una
+solución innovadora para mejorar su operación y resiliencia.
+
+\hypertarget{quuxe9-es-una-infraestructura-cruxedtica}{%
+\subsection{¿Qué es una infraestructura
+crítica?}\label{quuxe9-es-una-infraestructura-cruxedtica}}
+
+Son todos aquellos sistemas físicos o virtuales que hacen posible las
+funciones y servicios considerados esenciales y que contribuyen al buen
+desempeño de los sistemas más básicos a nivel social, económico,
+medioambiental y político. Cualquier alteración o interrupción en su
+suministro, debido a causas naturales (una catástrofe climática, por
+ejemplo) o provocada por el factor humano (como un ataque cibernético a
+una central de energía eléctrica) podría acarrear graves consecuencias.
+
+\includegraphics{1I.png}
+
+\hypertarget{tipos-de-infraestructura-cruxedtica}{%
+\subsection{Tipos de infraestructura
+crítica}\label{tipos-de-infraestructura-cruxedtica}}
+
+Nos brinda una visión general de las principales infraestructuras
+críticas ({``Infraestructuras Críticas: Definición, Planes, Riesgos,
+Amenazas y Legislación''} n.d.)
+
+Estas se agrupan comúnmente en sectores o áreas estratégicas, cada una
+con sus propias características y desafíos específicos. A continuación
+se presentan los principales tipos de infraestructuras críticas:
+
+\hypertarget{sector-de-quuxedmicos}{%
+\paragraph{\texorpdfstring{1. \textbf{Sector de
+Químicos}}{1. Sector de Químicos}}\label{sector-de-quuxedmicos}}
+
+Incluye la producción, almacenamiento y transporte de productos
+químicos, los cuales son esenciales para diversas industrias pero
+también representan un riesgo significativo si no se manejan
+adecuadamente
+
+\hypertarget{sector-de-comunicaciones}{%
+\paragraph{\texorpdfstring{2. \textbf{Sector de
+Comunicaciones}}{2. Sector de Comunicaciones}}\label{sector-de-comunicaciones}}
+
+Comprende las telecomunicaciones, redes de datos y otros servicios de
+comunicación que son fundamentales para la conectividad y el intercambio
+de información en tiempo real.
+
+\hypertarget{sector-de-energuxeda}{%
+\paragraph{\texorpdfstring{3. \textbf{Sector de
+Energía}}{3. Sector de Energía}}\label{sector-de-energuxeda}}
+
+Abarca la generación, transmisión y distribución de electricidad, así
+como las industrias de petróleo y gas, que son esenciales para casi
+todas las actividades económicas y sociales.
+
+\hypertarget{sector-de-servicios-de-emergencia}{%
+\paragraph{\texorpdfstring{4. \textbf{Sector de Servicios de
+Emergencia}}{4. Sector de Servicios de Emergencia}}\label{sector-de-servicios-de-emergencia}}
+
+Incluye las agencias de policía, bomberos, servicios médicos de
+emergencia y otras entidades de respuesta a emergencias que son
+cruciales para la seguridad y el bienestar de la población.
+
+\hypertarget{sector-de-presas}{%
+\paragraph{\texorpdfstring{5. \textbf{Sector de
+Presas}}{5. Sector de Presas}}\label{sector-de-presas}}
+
+Se refiere a las estructuras y sistemas asociados con presas y embalses,
+que son vitales para el suministro de agua, control de inundaciones y
+generación de energía hidroeléctrica.
+
+\hypertarget{sector-de-defensa-industrial}{%
+\paragraph{\texorpdfstring{6. \textbf{Sector de Defensa
+Industrial}}{6. Sector de Defensa Industrial}}\label{sector-de-defensa-industrial}}
+
+Involucra la producción y mantenimiento de armas, equipos y tecnologías
+militares necesarias para la defensa nacional.
+
+\hypertarget{sector-de-alimentaciuxf3n-y-agricultura}{%
+\paragraph{\texorpdfstring{7. \textbf{Sector de Alimentación y
+Agricultura}}{7. Sector de Alimentación y Agricultura}}\label{sector-de-alimentaciuxf3n-y-agricultura}}
+
+Cubre la producción, procesamiento y distribución de alimentos y
+productos agrícolas, asegurando el suministro continuo de alimentos a la
+población.
+
+\hypertarget{sector-de-gobierno-y-servicios-puxfablicos}{%
+\paragraph{\texorpdfstring{8. \textbf{Sector de Gobierno y Servicios
+Públicos}}{8. Sector de Gobierno y Servicios Públicos}}\label{sector-de-gobierno-y-servicios-puxfablicos}}
+
+Incluye las instalaciones y servicios esenciales del gobierno, que son
+cruciales para el funcionamiento administrativo y operativo del país.
+
+\hypertarget{sector-financiero}{%
+\paragraph{\texorpdfstring{9. \textbf{Sector
+Financiero}}{9. Sector Financiero}}\label{sector-financiero}}
+
+Abarca los bancos, mercados financieros y otras instituciones
+financieras, que son fundamentales para la estabilidad económica y el
+crecimiento.
+
+\hypertarget{sector-de-salud-y-salud-puxfablica}{%
+\paragraph{\texorpdfstring{10. \textbf{Sector de Salud y Salud
+Pública}}{10. Sector de Salud y Salud Pública}}\label{sector-de-salud-y-salud-puxfablica}}
+
+Comprende hospitales, clínicas, laboratorios y otros servicios y
+recursos de salud pública, esenciales para la atención médica y el
+bienestar de la población.
+
+\hypertarget{sector-de-tecnologuxedas-de-la-informaciuxf3n}{%
+\paragraph{\texorpdfstring{11. \textbf{Sector de Tecnologías de la
+Información}}{11. Sector de Tecnologías de la Información}}\label{sector-de-tecnologuxedas-de-la-informaciuxf3n}}
+
+Incluye los sistemas y servicios de tecnologías de la información como
+hardware, software y redes, que son vitales para la comunicación y la
+gestión de datos.
+
+\hypertarget{sector-nuclear}{%
+\paragraph{\texorpdfstring{12. \textbf{Sector
+Nuclear}}{12. Sector Nuclear}}\label{sector-nuclear}}
+
+Se refiere a las instalaciones y actividades relacionadas con la energía
+nuclear y materiales radiactivos, que requieren un manejo y protección
+rigurosos.
+
+\hypertarget{sector-de-transporte}{%
+\paragraph{\texorpdfstring{13. \textbf{Sector de
+Transporte}}{13. Sector de Transporte}}\label{sector-de-transporte}}
+
+Incluye sistemas de transporte aéreo, terrestre, marítimo y ferroviario,
+que son esenciales para el movimiento de personas y bienes.
+
+\hypertarget{sector-de-agua-y-aguas-residuales}{%
+\paragraph{\texorpdfstring{14. \textbf{Sector de Agua y Aguas
+Residuales}}{14. Sector de Agua y Aguas Residuales}}\label{sector-de-agua-y-aguas-residuales}}
+
+Abarca la gestión del suministro de agua potable y el tratamiento de
+aguas residuales, cruciales para la salud pública y el medio ambiente.
+
+\hypertarget{sector-de-instalaciones-cruxedticas}{%
+\paragraph{\texorpdfstring{15. \textbf{Sector de Instalaciones
+Críticas}}{15. Sector de Instalaciones Críticas}}\label{sector-de-instalaciones-cruxedticas}}
+
+Comprende las instalaciones comerciales, residenciales, de
+entretenimiento y de servicios que tienen un impacto significativo en la
+seguridad y economía.
+
+\hypertarget{sector-de-materiales-cruxedticos-y-manufactura}{%
+\paragraph{\texorpdfstring{16. \textbf{Sector de Materiales Críticos y
+Manufactura}}{16. Sector de Materiales Críticos y Manufactura}}\label{sector-de-materiales-cruxedticos-y-manufactura}}
+
+Involucra la producción de materiales esenciales y bienes manufacturados
+cruciales para la seguridad y economía del país.
+
+\hypertarget{sector-de-sistemas-de-transporte-como-infraestructura-cruxedtica}{%
+\subsection{Sector de sistemas de transporte como infraestructura
+crítica}\label{sector-de-sistemas-de-transporte-como-infraestructura-cruxedtica}}
+
+El sistema de transporte incluye la aviación, la red de autopistas y
+autovías, el transporte marítimo, el transporte público y ferroviario de
+pasajeros, los sistemas de oleoductos, el transporte ferroviario de
+mercancías, y los servicios de correos y envíos Este se considera una
+infraestructura crítica porque es esencial para el funcionamiento y la
+seguridad de una sociedad. A continuación, ({``Critical {Infrastructure}
+{Sectors} {\textbar} {CISA}''} n.d.) detalla los componentes principales
+y las razones clave:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Movilidad y conectividad:}
+\end{itemize}
+
+Un sistema de transporte seguro y eficiente es crucial para la seguridad
+nacional. Permite la rápida movilización de recursos en caso de
+emergencias y desastres
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Impacto económico:}
+\end{itemize}
+
+El transporte es vital para el comercio y la industria. La interrupción
+de los sistemas de transporte puede causar pérdidas económicas
+significativas y afectar la cadena de suministro.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Servicios esenciales:}
+\end{itemize}
+
+Muchas otras infraestructuras críticas, como la salud, la energía y las
+telecomunicaciones, dependen del transporte para su funcionamiento. Por
+ejemplo, los hospitales necesitan suministros médicos que se transportan
+por carretera, aire o ferrocarril.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Respuesta a emergencias:}
+\end{itemize}
+
+En situaciones de emergencia, como desastres naturales o ataques
+terroristas, el transporte es crucial para la evacuación y el suministro
+de ayuda humanitaria.
+
+\hypertarget{desarrollo}{%
+\section{Desarrollo}\label{desarrollo}}
+
+\hypertarget{caso-de-estudio-el-canal-de-panamuxe1}{%
+\section{Caso de estudio: el canal de
+Panamá}\label{caso-de-estudio-el-canal-de-panamuxe1}}
+
+\hypertarget{funcionamiento}{%
+\subsection{Funcionamiento}\label{funcionamiento}}
+
+El Canal de Panamá es una obra de ingeniería que permite a los barcos
+transitar entre el Océano Atlántico y el Océano Pacífico.
+
+Su funcionamiento se basa en un sistema de esclusas y compuertas que
+controlan el flujo de agua para elevar y descender los barcos a través
+de diferentes niveles del canal.
+
+Detalla ({``Descubre {Cómo} {Funciona} El {Canal} de {Panamá}:
+{Historia} y {Funcionamiento}''} 2023)
+
+\includegraphics{2I.png}
+
+\hypertarget{esclusas}{%
+\subsubsection{Esclusas}\label{esclusas}}
+
+Las esclusas son estructuras hidráulicas fundamentales en el Canal de
+Panamá. Consisten en cámaras que se llenan o vacían de agua para mover
+los barcos de un nivel a otro. El canal tiene tres juegos de esclusas:
+Miraflores, Pedro Miguel y Gatún, cada uno con dos cámaras. Los barcos
+entran en una cámara, las compuertas se cierran, y se bombea agua para
+ajustar el nivel, permitiendo así el tránsito seguro entre los océanos.
+
+\includegraphics{3I.png}
+
+\hypertarget{compuertas}{%
+\subsubsection{Compuertas}\label{compuertas}}
+
+Las compuertas son puertas operadas por motores eléctricos que controlan
+el flujo de agua en las esclusas. Cada compuerta pesa alrededor de 700
+toneladas y mide 19 metros de ancho, diseñada para soportar la presión
+del agua. Al cerrar las compuertas, se regula el nivel del agua en las
+cámaras, facilitando el movimiento de los barcos.
+
+\hypertarget{control-del-truxe1fico}{%
+\subsubsection{Control del Tráfico}\label{control-del-truxe1fico}}
+
+El control del tráfico es crucial para la eficiencia y seguridad del
+canal. Los barcos deben reservar su paso con antelación y proporcionar
+detalles sobre su carga y destino. Pilotos capacitados guían a los
+barcos utilizando boyas y señales de luz. Este sistema garantiza una
+navegación ordenada y segura a través del canal.
+
+\hypertarget{importancia-del-canal}{%
+\subsection{Importancia del Canal}\label{importancia-del-canal}}
+
+\hypertarget{comercio-internacional}{%
+\subsubsection{Comercio Internacional}\label{comercio-internacional}}
+
+El canal es una de las rutas más importantes del comercio mundial,
+manejando el 5\% del comercio global.
+
+\hypertarget{economuxeda-de-panamuxe1}{%
+\subsubsection{Economía de Panamá}\label{economuxeda-de-panamuxe1}}
+
+Representa una fuente significativa de ingresos para Panamá,
+contribuyendo aproximadamente al 10\% del PIB del país.
+
+\hypertarget{reducciuxf3n-de-costos}{%
+\subsubsection{Reducción de Costos}\label{reducciuxf3n-de-costos}}
+
+Permite a los barcos evitar la larga travesía alrededor de América del
+Sur, reduciendo considerablemente los costos de transporte.
+
+\hypertarget{impacto-ambiental-del-canal-de-panamuxe1}{%
+\subsection{Impacto Ambiental del Canal de
+Panamá}\label{impacto-ambiental-del-canal-de-panamuxe1}}
+
+\hypertarget{puxe9rdida-de-huxe1bitat}{%
+\subsubsection{Pérdida de Hábitat}\label{puxe9rdida-de-huxe1bitat}}
+
+La construcción del canal provocó la deforestación y la pérdida de
+hábitats naturales.
+
+\hypertarget{especies-invasoras}{%
+\subsubsection{Especies Invasoras}\label{especies-invasoras}}
+
+El canal ha facilitado la introducción de especies invasoras, afectando
+negativamente el ecosistema local.
+
+\hypertarget{calidad-del-agua}{%
+\subsubsection{Calidad del Agua}\label{calidad-del-agua}}
+
+El canal impacta la calidad del agua debido a los sedimentos y otros
+materiales presentes.
+
+\hypertarget{quuxe9-pasa-si-se-ve-afectado-el-funcionamiento-del-canal-de-panamuxe1}{%
+\subsection{¿Qué pasa si se ve afectado el funcionamiento del canal de
+Panamá?}\label{quuxe9-pasa-si-se-ve-afectado-el-funcionamiento-del-canal-de-panamuxe1}}
+
+En base a lo suscitado por ({``Por Qué El {Canal} de {Panamá} Se Está
+Quedando Sin Agua (y No Tiene Nada Que Ver Con La Crisis Del
+Coronavirus)''} n.d.) ,(Eavis and Angarita 2023) y por ({``Cambio
+Climático y El {Canal} de {Panamá}''} 2023) desarrollamos las posibles
+consecuencias de un mal funcionamiento del canal de Panamá.
+
+Por más de un siglo, el Canal de Panamá ha sido la ruta más corta entre
+los dos mayores océanos del mundo.
+
+Por él pasa casi el 6\% del comercio mundial: cada año, más de 12.000
+barcos lo cruzan de un lado a otro para llevar sus mercancías o
+pasajeros por más de 140 rutas a más de 160 países.
+
+Sin embargo, el funcionamiento del Canal de Panamá enfrenta serias
+amenazas debido al cambio climático y otros factores. La sequía, por
+ejemplo, ha reducido significativamente el nivel de agua en el Lago
+Gatún, un componente crítico del canal.
+
+Si la situación del Canal de Panamá empeora,habrían mayores
+restricciones acerca del paso y el peso de los buques y las
+consecuencias serían severas tanto a nivel local como global. Se prevé
+que las restricciones en el tránsito de barcos se incrementen, lo que
+llevaría a una reducción significativa en el volumen de mercancías que
+pueden pasar por el canal. Esto no solo afectaría a las grandes
+navieras, sino también a pequeñas y medianas empresas que dependen del
+comercio internacional para sus operaciones diarias. Las rutas
+alternativas, como el paso por el Cabo de Hornos o el Canal de Suez, se
+volverían necesarias, incrementando los costos de transporte y los
+tiempos de entrega. Las rutas más largas significarían un mayor consumo
+de combustible, lo que a su vez elevaría los precios de los bienes y
+servicios en los mercados globales, afectando a los consumidores
+finales.
+
+Además, las cadenas de suministro globales se verían gravemente
+afectadas, especialmente para las industrias que dependen de entregas
+just-in-time, como la automotriz, la tecnología y la manufactura. Los
+retrasos en la entrega de componentes críticos podrían llevar a paradas
+en la producción, pérdidas económicas y desempleo. La incertidumbre y la
+falta de previsibilidad en los tiempos de tránsito también podrían
+obligar a las empresas a mantener mayores inventarios, incrementando sus
+costos operativos.
+
+Panamá, por su parte, enfrentaría una disminución drástica en los
+ingresos derivados del canal, lo que afectaría su economía y podría
+llevar a recortes en servicios públicos y proyectos de infraestructura
+esenciales. La pérdida de ingresos podría provocar una desaceleración
+económica en el país, afectando sectores clave como la construcción, el
+turismo y los servicios financieros. Además, la dependencia de rutas
+alternativas incrementaría la huella de carbono del transporte marítimo,
+agravando el cambio climático y creando un ciclo perjudicial para la
+sostenibilidad global. La situación también podría generar tensiones
+geopolíticas, ya que los países y las empresas buscan asegurar rutas
+comerciales seguras y eficientes.
+
+La situación requiere una acción inmediata y soluciones innovadoras para
+mitigar estos riesgos y asegurar la continuidad del comercio
+internacional. La implementación de tecnologías avanzadas, como gemelos
+digitales y sistemas de gestión del agua más eficientes, podría mejorar
+la resiliencia del canal. Asimismo, la cooperación internacional y la
+inversión en infraestructuras críticas alternativas podrían ayudar a
+diversificar las rutas de transporte y reducir la dependencia excesiva
+de un solo canal. Solo a través de un enfoque integral y coordinado se
+podrán enfrentar los desafíos y garantizar la estabilidad del comercio
+global en el futuro.
+
+\hypertarget{conclusiuxf3n}{%
+\section{Conclusión}\label{conclusiuxf3n}}
+
+En resumen, cualquier interrupción o disminución en la capacidad
+operativa del Canal de Panamá tiene efectos en cadena que afectan tanto
+al comercio internacional como a la economía de Panamá. La
+implementación de soluciones innovadoras, como los gemelos digitales, es
+crucial para mejorar la resiliencia y eficiencia de esta infraestructura
+crítica frente a los desafíos actuales y futuros.
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_cambio_2023}{}}%
+{``Cambio Climático y El {Canal} de {Panamá}.''} 2023.
+\url{https://themys.sid.uncu.edu.ar/index.php/2023/10/10/cambio-climatico-y-el-canal-de-panama/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_critical_nodate}{}}%
+{``Critical {Infrastructure} {Sectors} {\textbar} {CISA}.''} n.d.
+Accessed August 5, 2024.
+\url{https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_descubre_2023}{}}%
+{``Descubre {Cómo} {Funciona} El {Canal} de {Panamá}: {Historia} y
+{Funcionamiento}.''} 2023.
+\url{https://panama50.com/como-funciona-el-canal-de-panama-una-guia-completa/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-eavis_sequiafecta_2023}{}}%
+Eavis, Peter, and Nathalia Angarita. 2023. {``Una Sequía Afecta Al
+{Canal} de {Panamá}. {Y} El Comercio Internacional Lo Resiente.''}
+\emph{The New York Times}, November.
+\url{https://www.nytimes.com/es/2023/11/01/espanol/sequia-canal-de-panama-comercio.html}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_infraestructuras_nodate}{}}%
+{``Infraestructuras Críticas: Definición, Planes, Riesgos, Amenazas y
+Legislación.''} n.d. \emph{LISA Institute}. Accessed August 5, 2024.
+\url{https://www.lisainstitute.com/blogs/blog/infraestructuras-criticas}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-noauthor_por_nodate}{}}%
+{``Por Qué El {Canal} de {Panamá} Se Está Quedando Sin Agua (y No Tiene
+Nada Que Ver Con La Crisis Del Coronavirus).''} n.d. \emph{BBC News
+Mundo}. Accessed August 5, 2024.
+\url{https://www.bbc.com/mundo/noticias-america-latina-51840165}.
+
+\end{CSLReferences}
+
+\bibliographystyle{unsrt}
+\bibliography{inf.bib}
+
+
+\end{document}
